@@ -1,0 +1,248 @@
+seed:  690
+5028
+1066
+2104
+start train
+Training Loss:  3.1757403120161993
+Accuracy Score = 0.12664165103189493
+F1 Score (Micro) = 0.3757519666820916
+F1 Score (Macro) = 0.23466852540272612
+time:  243.51976084709167
+epoch: 1 | train loss: 3.175740 | valid loss: 0.649499 | *
+Accuracy Score = 0.12832699619771862
+F1 Score (Micro) = 0.3671232876712329
+F1 Score (Macro) = 0.23075380378710475
+EPOCH 1
+              precision    recall  f1-score   support
+
+      F-bias       0.29      1.00      0.46       608
+      E-bias       0.14      0.88      0.24       224
+      D-bias       0.00      0.00      0.00        55
+
+   micro avg       0.23      0.91      0.37       887
+   macro avg       0.14      0.62      0.23       887
+weighted avg       0.24      0.91      0.37       887
+ samples avg       0.25      0.37      0.29       887
+
+
+* saved
+
+
+
+start train
+Training Loss:  2.703520080399892
+Accuracy Score = 0.150093808630394
+F1 Score (Micro) = 0.38026256224535987
+F1 Score (Macro) = 0.3611291916781177
+time:  330.74005603790283
+epoch: 2 | train loss: 2.703520 | valid loss: 0.644928 | *
+Accuracy Score = 0.13498098859315588
+F1 Score (Micro) = 0.36683984639710865
+F1 Score (Macro) = 0.29862698101122326
+EPOCH 2
+              precision    recall  f1-score   support
+
+      F-bias       0.32      0.98      0.48       608
+      E-bias       0.13      0.92      0.22       224
+      D-bias       0.29      0.15      0.19        55
+
+   micro avg       0.23      0.92      0.37       887
+   macro avg       0.24      0.68      0.30       887
+weighted avg       0.27      0.92      0.40       887
+ samples avg       0.25      0.37      0.29       887
+* saved
+
+
+
+
+start train
+Training Loss:  2.2256485689254033
+Accuracy Score = 0.20544090056285177
+F1 Score (Micro) = 0.3891891891891892
+F1 Score (Macro) = 0.337334515702114
+time:  318.26428866386414
+epoch: 3 | train loss: 2.225649 | valid loss: 0.621463 | *
+(array([0.32921348, 0.14358231, 0.24137931]), array([0.96381579, 0.88392857, 0.25454545]), array([0.37914079, 0.17247387, 0.24390244]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.19866920152091255
+F1 Score (Micro) = 0.38888888888888895
+F1 Score (Macro) = 0.3285372287633273
+EPOCH 3
+              precision    recall  f1-score   support
+
+      F-bias       0.33      0.96      0.49       608
+      E-bias       0.14      0.88      0.25       224
+      D-bias       0.24      0.25      0.25        55
+
+   micro avg       0.25      0.90      0.39       887
+   macro avg       0.24      0.70      0.33       887
+weighted avg       0.28      0.90      0.41       887
+ samples avg       0.27      0.37      0.30       887
+* saved
+
+
+(array([0.32921348, 0.14358231, 0.24137931]), array([0.96381579, 0.88392857, 0.25454545]), array([0.37914079, 0.17247387, 0.24390244]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.19866920152091255
+F1 Score (Micro) = 0.38888888888888895
+F1 Score (Macro) = 0.3285372287633273
+
+
+
+
+
+E:\Anaconda3\envs\617\python.exe E:/WIKIBIAS/src/Classification/train_finegrained.py --device 0 --batch-size 16 --epochs 3 --max-len 128 --lr 2e-5
+Namespace(add_neg='no', batch_size=16, bert_model='bert-base-uncased', bias_type='frame', ckpt='ckpt/model.pt', class_num=2, clip_grad=3, cuda=None, device=0, dropout=0.5, emb_dim=300, epochs=3, eval_ckpt='', eval_on='data/test_0820.tsv', grad_step=-1, hidden_size=100, interval=None, kernel_num=100, kernel_sizes='3,4,5', lr=2e-05, max_len=128, mode_SP='number', model='bert', n_bert_hid=768, n_emb=-1, name='', noisy_method='GLC', pad_idx=3, pooling_type='MAX', pretrained_ckpt='', rand_seed=100, save_dir='cache', strategy='none', tokenizer='word', train_path='data/train.tsv', train_set='biased', unk_idx=1, verbose=False, wd=0)
+seed:  419
+5028
+1066
+2104
+start train
+Training Loss:  3.173050229890006
+E:\Anaconda3\envs\617\lib\site-packages\sklearn\metrics\_classification.py:1465: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  average, "true nor predicted", 'F-score is', len(true_sum)
+train F1 Score (Macro) = 0.26666666666666666
+val Accuracy Score = 0.1275797373358349
+F1 Score (Micro) = 0.3642641346568839
+F1 Score (Macro) = 0.2303944615929734
+time:  239.87283754348755
+epoch: 1 | train loss: 3.173050 | valid loss: 0.667298 | *
+EPOCH 1
+* saved
+start train
+Training Loss:  2.72563109189745
+train F1 Score (Macro) = 0.2857142857142857
+val Accuracy Score = 0.2223264540337711
+F1 Score (Micro) = 0.3934926283680732
+F1 Score (Macro) = 0.325915100135219
+time:  285.19275856018066
+epoch: 2 | train loss: 2.725631 | valid loss: 0.645490 | *
+EPOCH 2
+* saved
+start train
+Training Loss:  2.226399737691122
+train F1 Score (Macro) = 0.3333333333333333
+val Accuracy Score = 0.349906191369606
+F1 Score (Micro) = 0.42821473158551815
+F1 Score (Macro) = 0.39885409575675057
+time:  316.45183658599854
+epoch: 3 | train loss: 2.226400 | valid loss: 0.556855 | *
+EPOCH 3
+* saved
+(array([0.44326241, 0.15056571, 0.34285714]), array([0.82236842, 0.77232143, 0.21818182]), array([0.48828125, 0.17946058, 0.30769231]), array([608, 224,  55], dtype=int64))
+test Accuracy Score = 0.3379277566539924
+F1 Score (Micro) = 0.42825883088465144
+F1 Score (Macro) = 0.3649021487848638
+E:\Anaconda3\envs\617\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\617\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Process finished with exit code 0
+
+
+E:\Anaconda3\envs\active_learning\python.exe "C:\Program Files\JetBrains\PyCharm 2020.2\plugins\python\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 60491 --file E:/WIKIBIAS/src/Classification/train_finegrained.py --device 0 --batch-size 16 --epochs 3 --max-len 128 --lr 2e-5
+pydev debugger: process 9776 is connecting
+
+Connected to pydev debugger (build 202.6397.98)
+Namespace(add_neg='no', batch_size=16, bert_model='bert-base-uncased', bias_type='frame', ckpt='ckpt/model.pt', class_num=2, clip_grad=3, cuda=None, device=0, dropout=0.5, emb_dim=300, epochs=3, eval_ckpt='', eval_on='data/test_0820.tsv', grad_step=-1, hidden_size=100, interval=None, kernel_num=100, kernel_sizes='3,4,5', lr=2e-05, max_len=128, mode_SP='number', model='bert', n_bert_hid=768, n_emb=-1, name='', noisy_method='GLC', pad_idx=3, pooling_type='MAX', pretrained_ckpt='', rand_seed=100, save_dir='cache', strategy='none', tokenizer='word', train_path='data/train.tsv', train_set='biased', unk_idx=1, verbose=False, wd=0)
+157
+5028
+1066
+2104
+start train
+Training Loss:  2.9815816784661915
+Accuracy Score = 0.25046904315197
+F1 Score (Micro) = 0.40581395348837207
+F1 Score (Macro) = 0.24837838975154347
+734.4091446399689
+epoch: 1 | train loss: 2.981582 | valid loss: 0.590787 | *
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+(array([0.36484594, 0.15483235, 0.        ]), array([0.85690789, 0.70089286, 0.        ]), array([0.41218354, 0.18341121, 0.        ]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.2818441064638783
+F1 Score (Micro) = 0.407329528386903
+F1 Score (Macro) = 0.25514090474845347
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+EPOCH 1
+              precision    recall  f1-score   support
+
+      F-bias       0.36      0.86      0.51       608
+      E-bias       0.15      0.70      0.25       224
+      D-bias       0.00      0.00      0.00        55
+
+   micro avg       0.28      0.76      0.41       887
+   macro avg       0.17      0.52      0.26       887
+weighted avg       0.29      0.76      0.41       887
+ samples avg       0.26      0.31      0.27       887
+
+* saved
+start train
+Training Loss:  2.6039973916515473
+Accuracy Score = 0.2673545966228893
+F1 Score (Micro) = 0.4172185430463576
+F1 Score (Macro) = 0.3603025969832556
+15141.057637691498
+epoch: 2 | train loss: 2.603997 | valid loss: 0.572562 | *
+(array([0.35797905, 0.15405405, 1.        ]), array([0.95559211, 0.76339286, 0.03636364]), array([0.40915493, 0.18331904, 0.15873016]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.27519011406844107
+F1 Score (Micro) = 0.4163445610160132
+F1 Score (Macro) = 0.282463308045742
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+EPOCH 2
+              precision    recall  f1-score   support
+
+      F-bias       0.36      0.96      0.52       608
+      E-bias       0.15      0.76      0.26       224
+      D-bias       1.00      0.04      0.07        55
+
+   micro avg       0.28      0.85      0.42       887
+   macro avg       0.50      0.59      0.28       887
+weighted avg       0.35      0.85      0.43       887
+ samples avg       0.27      0.35      0.30       887
+
+* saved
+start train
+Training Loss:  2.1354797611160885
+Accuracy Score = 0.45872420262664165
+F1 Score (Micro) = 0.4672454617205999
+F1 Score (Macro) = 0.2532688100828868
+1643.3527688980103
+epoch: 3 | train loss: 2.135480 | valid loss: 0.504501 | *
+(array([0.42253521, 0.24225352, 0.5       ]), array([0.88815789, 0.38392857, 0.01818182]), array([0.47202797, 0.26155718, 0.07936508]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.48051330798479086
+F1 Score (Micro) = 0.4972244250594766
+F1 Score (Macro) = 0.30159737719785046
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+EPOCH 3
+              precision    recall  f1-score   support
+
+      F-bias       0.42      0.89      0.57       608
+      E-bias       0.24      0.38      0.30       224
+      D-bias       0.50      0.02      0.04        55
+
+   micro avg       0.38      0.71      0.50       887
+   macro avg       0.39      0.43      0.30       887
+weighted avg       0.38      0.71      0.47       887
+ samples avg       0.29      0.29      0.28       887
+
+* saved
+(array([0.42253521, 0.24225352, 0.5       ]), array([0.88815789, 0.38392857, 0.01818182]), array([0.47202797, 0.26155718, 0.07936508]), array([608, 224,  55], dtype=int64))
+Accuracy Score = 0.48051330798479086
+F1 Score (Micro) = 0.4972244250594766
+F1 Score (Macro) = 0.30159737719785046
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in samples with no predicted labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+E:\Anaconda3\envs\active_learning\lib\site-packages\sklearn\metrics\_classification.py:1248: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in samples with no true labels. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+Process finished with exit code 0
