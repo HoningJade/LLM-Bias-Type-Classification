@@ -1,4 +1,6 @@
-# WIKIBIAS: Detecting Multi-Span Subjective Biases in Language
+# Intermediate Deep Learning Project
+
+This is teamwork of Ruiyu Li and Zhiying Zhu.
 
 This repo is adapted from the following [paper](https://github.com/cs329yangzhong/WIKIBIAS). Please download data from the [repo](https://github.com/cs329yangzhong/WIKIBIAS).
 
