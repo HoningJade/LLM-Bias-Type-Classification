@@ -119,7 +119,7 @@ def valid(args):
     return dev_loss
 
 
-def test(args, write_file):
+def test(args, write_file, test_ds):
     # model.load_state_dict(torch.load(args.ckpt))
     model.eval()
     test_loader = create_loader(args, test_ds, shuffle=False)
@@ -193,7 +193,7 @@ if __name__ == '__main__':
 
     test_tsv = "../../data/class_finegrained/test.tsv"
     train_tsv = "../../data/class_finegrained/train.tsv"
-    ckpt_name = ""
+    ckpt_name = args.eval_ckpt
 
     file1 = open("output_%s_out.txt" % ckpt_name, "w")
     logger = Logger(args.name)
@@ -207,8 +207,10 @@ if __name__ == '__main__':
     model = select_model(args)
     model = model.to(args.device)
     ckpt_path = 'ckpt/%s' % ckpt_name
-    model.load_state_dict(torch.load(ckpt_path, map_location="cpu"))
+    print(ckpt_path)
+    model.load_state_dict(torch.load(ckpt_path, map_location="cuda"))
     print("Test on ...", test_tsv)
+    test_ds = BiasDataset_multilabel(args, test_tsv)
     accuracy, f1_score_micro,  f1_score_macro, prf1, classification_report_, roc_auc = test(
-        args, file1)
+        args, file1, test_ds)
     print(classification_report_)
