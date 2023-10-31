@@ -2,7 +2,7 @@
 
 This is teamwork of Ruiyu Li and Zhiying Zhu.
 
-This repo is adapted from the following [paper](https://github.com/cs329yangzhong/WIKIBIAS). Please download data from the [repo](https://github.com/cs329yangzhong/WIKIBIAS).
+This repo built upon the following [paper](https://github.com/cs329yangzhong/WIKIBIAS). Please download data from the [repo](https://github.com/cs329yangzhong/WIKIBIAS).
 
 ```
 @inproceedings{zhong-etal-2021-wikibias-detecting,
